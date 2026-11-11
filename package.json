@@ -1,0 +1,32 @@
+{
+  "name": "apiobituarios",
+  "version": "2.0.0",
+  "description": "API de El Paraíso Parque Cementerio: obituarios, misas, reservas y pagos con ePayco",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "dev": "node --watch index.mjs",
+    "start": "node index.mjs",
+    "seed:horarios": "node scripts/seedHorarios.mjs",
+    "admin": "node scripts/crearAdmin.mjs"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "luxon": "^3.5.0",
+    "mongoose": "^8.9.5",
+    "multer": "^2.0.2",
+    "node-cron": "^4.1.0",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  }
+}
